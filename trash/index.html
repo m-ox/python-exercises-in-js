@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./css/common.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Candara, sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(247, 238, 238);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .squeeze {
+        }
+
+        .banner {
+            background-color: rgb(197, 87, 87);
+            color: rgb(245, 236, 236);
+            font-family: Candara, sans-serif;
+            height: 100px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .intro {
+            height: 100%;
+            padding: 20px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .main-content {
+            height: 10em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hello-box {
+            color: rgb(197, 87, 87);
+            width: 90vw;
+            background: rgb(230, 213, 213);
+            margin: 10px 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .hello-box-content {
+            height: 80%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: red; */
+        }
+
+        .hello-box-content p {
+            width: 80%;
+            margin: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="banner">
+        <div class="intro">
+            <h1>Javascript Introduction</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="squeeze">
+            <div class="main-content">
+                <div class="hello-box">
+                    <div class="hello-box-content">
+                        <p>Hello.<br>I am a friendly box.</p>
+                    </div>
+                    <div class="hello-box-content">
+                        <p>How you doing?</p>
+                    </div>
+                    <div class="hello-box-content">
+                        <p>You can redefine a let variable<br>but you cannot redeclare it with var!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        var user = {
+            name: 'Maud',
+            age: 25,
+            city: 'Missoula',
+            favourites: {
+                color: 'blue',
+                plant: 'oxalis triangularis',
+                yogurt: 'icelandic'
+            }
+        };
+
+        console.log("Hello my name is", user.name, "and my favourite plant is the", user.favourites.plant);
+        // let age = 25; // no changey
+        // console.log(age);
+
+        /*
+        var name, city, age;
+        name = 'Adam';
+        city = 'Chicago';
+        age = '25';
+        */
+
+        /*function updateVar(){
+            age = 80
+            console.log("function:", age)
+        }
+
+        console.log("global:", age)
+        updateVar()
+        console.log("global: ", age) */
+
+        // hoisting a bubble to pop in console
+        bubble = 'pop'
+
+        // below is not hoisted... initializing and declaring at the same time does not hoist
+        //console.log(age);
+        //var age = 15;
+
+        var user = {
+            name: 'Maud',
+            age: 25,
+            city: 'Missoula',
+            favourites: {
+                color: 'blue',
+                plant: 'oxalis',
+                yogurt: 'icelandic'
+            }
+        }
+
+        //console.log(user.favourites.plant);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+.card-gallery {
+    background-color: var(--light);
+    display: grid;
+    min-height: 500px;
+    place-items: center;
+    /*maybe separate?*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card-gallery a {
+    /* Research on how to make entire card clickable */
+    }
+
+.card {
+    color: var(--light);
+    background-image: url(https://th.bing.com/th/id/Rbaf86cf60e66def1e976b5e17aae67c2?rik=5dNq2sQJprUZtg&pid=ImgRaw);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 30ch;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.card-content {
+    padding: 1em;
+    background: linear-gradient( hsl(0 0% 0% / 0), hsl(191deg 80% 35%), hsl(191deg 100% 18%));
+    max-height: 6em;
+    font-size: 1em;
+    transition: 1s;
+    margin-top: 150px;
+    transform-origin: right;
+    overflow: hidden;
+}
+
+.card-title {
+    position: relative; /* this confirms it is the containing element */
+    width: max-content;
+    font-size: 1.7em;
+    padding-bottom: 15px;
+    text-shadow: -2px 2px 5px black;
+    font-family: 'Antonio', sans-serif;
+}
+
+.card-title::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--light);
+}
+
+.card:hover {
+    filter: saturate(0.7);
+}
+
+.card-body {
+    font-size: .8em;
+}
+
+.card-content a {
+    font-size: .8em;
+    color: var(--green);
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    color: var(--orange)
+}
+
+.card-content:hover {
+    transform: translateY(-60%);
+}

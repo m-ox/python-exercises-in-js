@@ -1,0 +1,29 @@
+.header-button {
+    padding: 5px 10px;
+    border: 2px solid #b1d3e057;
+    border-radius: 5px;
+    background-color: var(--hasting-green);
+    color: var(--light);
+    font-size: 1.2em;
+    box-shadow: -1px 0px 5px 4px #1f612d;
+    transition: .2s;
+    font-family: 'Antonio', sans-serif;
+}
+
+#all-movies-highlight:hover {
+    background-color: var(--orange);
+    box-shadow: -1px 0px 5px 4px var(--orange);
+    cursor: pointer;
+}
+
+#random-movie-highlight:hover {
+    background-color: var(--green);
+    box-shadow: -1px 0px 5px 4px yellow;
+    cursor: pointer;
+}
+
+#other-highlight:hover {
+    background-color: var(--blue);
+    box-shadow: -1px 0px 5px 4px rgb(0 171 255);
+    cursor: pointer;
+}
