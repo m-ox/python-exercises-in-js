@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-#other-highlight:hover {
+.other-highlight:hover {
     background-color: var(--blue);
     box-shadow: -1px 0px 5px 4px rgb(0 171 255);
     cursor: pointer;

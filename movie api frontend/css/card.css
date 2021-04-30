@@ -1,4 +1,4 @@
-.card-gallery {
+#card-gallery {
     background-color: var(--light);
     display: grid;
     min-height: 500px;
@@ -9,16 +9,11 @@
     gap: 10px;
 }
 
-.card-gallery a {
-    /* Research on how to make entire card clickable */
-    }
-
 .card {
     color: var(--light);
-    background-image: url(https://th.bing.com/th/id/Rbaf86cf60e66def1e976b5e17aae67c2?rik=5dNq2sQJprUZtg&pid=ImgRaw);
     background-size: cover;
     padding: 8rem 0 0;
-    max-width: 30ch;
+    width: 30ch;
     transition: .2s;
     cursor: pointer;
     border-radius: 5px;

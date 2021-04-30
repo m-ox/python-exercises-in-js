@@ -1,0 +1,24 @@
+<script>
+    class myError extends Error {
+      constructor (msg = 'An error occurred, dude.', ...params) {
+        super(...params);
+
+        this.msg = msg
+      }
+    }
+
+    function siteComponent(func) {
+      try {
+        return func();
+      } catch(e) {
+        throw new myError('myError', 'siteComponent is borked')
+      }
+      
+    }
+
+    widget = () => {
+      return '<div> Success! </div>';
+    }
+
+    console.log(siteComponent('oops'));
+  </script>

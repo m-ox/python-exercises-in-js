@@ -1,0 +1,16 @@
+<script>
+    function siteComponent(func) {
+      try {
+        return func();
+      } catch(e) {
+        console.log('That is not a valid argument for siteComponent', e);
+      }
+      
+    }
+
+    widget = () => {
+      return '<div> Success! </div>';
+    }
+
+    console.log(siteComponent(widget));
+  </script>

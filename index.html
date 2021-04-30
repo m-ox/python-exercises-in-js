@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo</title>
+  </head>
+  <body>
+  </body>
 
-    <style>
-        body {
-            background: rgb(255, 251, 3);
-        }
-    </style>
-</head>
-<body>
-    <script src="notes\async_await.js"></script>
-</body>
+  <script>
+    class ComponentError extends Error {
+      constructor (...args) {
+        super(...args);
+
+        this.name = 'componentError' // IT HAS TO BE NAME!
+      }
+    }
+
+    function siteComponent(func) {
+      try {
+        return func();
+      } catch(e) {
+        throw new ComponentError('siteComponent is borked!\n >>> ' + e)
+
+      }
+      
+    }
+
+    widget = () => {
+      return '<div> Success! </div>';
+    }
+
+    //throw new componentError('It\'s doing something weird!')
+
+    console.log(siteComponent("widget"));
+  </script>
 </html>
