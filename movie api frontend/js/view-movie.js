@@ -2,8 +2,7 @@ import { notRealDatabase } from '/js/notrealdb.js';
 import { clickCard } from '/js/click-card.js';
 
 // transfer of clicked movie id test
-let clicked = clickCard()
-console.log(clickCard())
+let clicked = clickCard() // this needs to return a numbered index value
 
 // transfer of mock db test
 let db = notRealDatabase
@@ -12,7 +11,7 @@ console.log(db)
 
 const movieLoader = (db) => {
 
-    const {id, title, release, summary, starring, rating, poster} = db[clicked]
+    const {id, title, release, summary, starring, rating, poster} = db[1]// change to clicked index value
     const container = document.createElement('div');
     container.innerHTML = `
         <div class="feature-movie-wrapper">
@@ -61,5 +60,7 @@ const movieLoader = (db) => {
             </div>
         </div>`;
 
-       document.getElementById("main-content").appendChild(container)
+       document.getElementsByClassName("main-content")[0].appendChild(container)
 }
+
+movieLoader(db)

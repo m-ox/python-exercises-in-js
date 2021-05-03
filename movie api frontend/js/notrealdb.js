@@ -4,7 +4,7 @@ export const notRealDatabase = [
     release: 2008,
     summary: 'Humanity is shaken into questioning its place in the natural order of things; is being at the top of the food chain an earned right or just a privilege afforded by Grand Design?',
     starring: 'Mark Wahlberg',
-    rating: 2/5,
+    rating: 'deplorable',
     poster: "https://amc-theatres-res.cloudinary.com/v1584531803/amc-cdn/production/2/movies/15500/15506/Poster/p_800x1200_AMC_HappeningThe_140320.jpg" 
     },
     {id: 2,
@@ -12,7 +12,7 @@ export const notRealDatabase = [
     release: 1997,
     summary: 'In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr. Zorg at bay.',
     starring: 'weird people',
-    rating: 5/5,
+    rating: 'excellent',
     poster: "https://m.media-amazon.com/images/I/51dlWqKy6oL._AC_.jpg" 
     },
     {id: 3,
@@ -20,7 +20,7 @@ export const notRealDatabase = [
     release: 1999,
     summary: 'A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter\'s best friend.',
     starring: 'weirdness',
-    rating: 4/5,
+    rating: 'great',
     poster: "https://live.staticflickr.com/6120/6319595016_78380e5042_b.jpg" 
     },
     {id: 4,
@@ -28,7 +28,7 @@ export const notRealDatabase = [
     release: 1997,
     summary: 'Two teen friends navigate the ruins of a tiny, tornado-ravaged town in Ohio that is populated by the deformed, disturbed and perverted. ',
     starring: 'grossness',
-    rating: 2/5,
+    rating: 'bad',
     poster: "https://images-na.ssl-images-amazon.com/images/I/51BCuy9wwsL._AC_.jpg" 
     },
     {id: 5,
@@ -36,7 +36,7 @@ export const notRealDatabase = [
     release: 2008,
     summary: 'Humanity is shaken into questioning its place in the natural order of things; is being at the top of the food chain an earned right or just a privilege afforded by Grand Design?',
     starring: 'Mark Wahlberg',
-    rating: 2/5,
+    rating: 'deplorable',
     poster: "https://amc-theatres-res.cloudinary.com/v1584531803/amc-cdn/production/2/movies/15500/15506/Poster/p_800x1200_AMC_HappeningThe_140320.jpg" 
     },
     {id: 6,
@@ -44,7 +44,7 @@ export const notRealDatabase = [
     release: 1997,
     summary: 'In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr. Zorg at bay.',
     starring: 'weird people',
-    rating: 5/5,
+    rating: 'excellent',
     poster: "https://m.media-amazon.com/images/I/51dlWqKy6oL._AC_.jpg" 
     },
     {id: 7,
@@ -52,7 +52,7 @@ export const notRealDatabase = [
     release: 1999,
     summary: 'A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter\'s best friend.',
     starring: 'weirdness',
-    rating: 4/5,
+    rating: 'great',
     poster: "https://live.staticflickr.com/6120/6319595016_78380e5042_b.jpg" 
     },
     {id: 8,
@@ -60,7 +60,39 @@ export const notRealDatabase = [
     release: 1997,
     summary: 'Two teen friends navigate the ruins of a tiny, tornado-ravaged town in Ohio that is populated by the deformed, disturbed and perverted. ',
     starring: 'grossness',
-    rating: 2/5,
+    rating: 'bad',
+    poster: "https://images-na.ssl-images-amazon.com/images/I/51BCuy9wwsL._AC_.jpg" 
+    },
+    {id: 9,
+    title: 'The Happening',
+    release: 2008,
+    summary: 'Humanity is shaken into questioning its place in the natural order of things; is being at the top of the food chain an earned right or just a privilege afforded by Grand Design?',
+    starring: 'Mark Wahlberg',
+    rating: 'deplorable',
+    poster: "https://amc-theatres-res.cloudinary.com/v1584531803/amc-cdn/production/2/movies/15500/15506/Poster/p_800x1200_AMC_HappeningThe_140320.jpg" 
+    },
+    {id: 10,
+    title: 'The Fifth Element',
+    release: 1997,
+    summary: 'In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr. Zorg at bay.',
+    starring: 'weird people',
+    rating: 'excellent',
+    poster: "https://m.media-amazon.com/images/I/51dlWqKy6oL._AC_.jpg" 
+    },
+    {id: 11,
+    title: 'American Beauty',
+    release: 1999,
+    summary: 'A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter\'s best friend.',
+    starring: 'weirdness',
+    rating: 'great',
+    poster: "https://live.staticflickr.com/6120/6319595016_78380e5042_b.jpg" 
+    },
+    {id: 12,
+    title: 'Gummo',
+    release: 1997,
+    summary: 'Two teen friends navigate the ruins of a tiny, tornado-ravaged town in Ohio that is populated by the deformed, disturbed and perverted. ',
+    starring: 'grossness',
+    rating: 'bad',
     poster: "https://images-na.ssl-images-amazon.com/images/I/51BCuy9wwsL._AC_.jpg" 
     }
 ]
