@@ -1,6 +1,6 @@
 {
   "name": "mox-devcamp-js-footer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "This module allows for a dynamic footer to be generated for JS applications with an updated year and name. Following along with Jordan Hudgens' video.",
   "main": "index.js",
   "scripts": {

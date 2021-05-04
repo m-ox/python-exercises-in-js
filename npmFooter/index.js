@@ -8,8 +8,8 @@ var moment = require('moment');
  * @return {string}
  */
 
-let year = moment().format('YYYY')
+var year = moment().format('YYYY')
 
-exports.footer = function (year, name) {
+exports.footer = function (name) {
     return `Copyright ${year} ${name} All rights reserved`
 };
