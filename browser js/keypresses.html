@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+
+  <style>
+    input {
+      background: rgb(77, 77, 204);
+      color: white;
+      font-size: 3em;
+      height: 100px;
+      width: 100px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <input type="text" id="searchBar">
+
+</body>
+
+<script>
+  const hotKeys = (e) => {
+    let windowEvent = window.event ? event : e; // this is for ie compatibility purposes
+
+    if (windowEvent.keyCode === 66 && windowEvent.ctrlKey) {
+      const searchBar = document.querySelector('#searchBar');
+      searchBar.focus()
+      searchBar.value = 'B'
+    }
+  }
+
+  document.onkeydown = hotKeys;
+</script>
+
+</html>
