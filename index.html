@@ -39,10 +39,11 @@ todos.forEach(todo => {
     todo.addEventListener('click', (e) => {
       let movingTodo = e.target
       let movingTodoText = document.createTextNode(movingTodo.textContent)
+      let li = document.createElement('li')
       console.log(movingTodoText)
       let compTodoHook = e.target.parentNode.parentNode.parentNode.querySelector('.completedTodoWrapper').querySelector('.completed-footer')
 
-      compTodoHook.appendChild(movingTodoText)
+      compTodoHook.appendChild(li).appendChild(movingTodoText)
 
       console.log(e.target)
       console.log(e)
