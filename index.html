@@ -26,24 +26,26 @@
 
   <h2>Completed Todos</h2>
   <ul class="completedTodoWrapper">
-    <div class="completed"></div>
+    <div class="completed-footer"></div>
   </ul>
 </body>
 
 <script>
 const todos = document.querySelectorAll('.todoItem')
+const completedTodos = document.querySelector('.completed')
+const completedTodoWrapper = document.querySelector('.completedTodoWrapper')
 
 todos.forEach(todo => {
     todo.addEventListener('click', (e) => {
       let movingTodo = e.target
-      let compTodo = e.target.parentNode.parentNode.parentNode.querySelector('.completedTodoWrapper').querySelector('.completed')
+      let movingTodoText = document.createTextNode(movingTodo.textContent)
+      console.log(movingTodoText)
+      let compTodoHook = e.target.parentNode.parentNode.parentNode.querySelector('.completedTodoWrapper').querySelector('.completed-footer')
+
+      compTodoHook.appendChild(movingTodoText)
 
       console.log(e.target)
       console.log(e)
-      compTodo.innerHTML='yo'
-
-      compTodo.appendChild(movingTodo)
-      //movingTodo.appendChild()
       movingTodo.remove()
     })      
 })
