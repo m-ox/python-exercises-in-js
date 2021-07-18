@@ -72,10 +72,10 @@ function NumOmitter(selected) {
 // # IE:  "abcd" => "A-Bb-Ccc-Dddd"
 // # "RqaEzTy" => "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 
-prompty = prompt('What string do you want to mangle? >> ')
-            .replace(' ', '')
+//prompty = prompt('What string do you want to mangle? >> ')
+            //.replace(' ', '')
 
-cl(prompty)
+//cl(prompty)
 
 function stringMangler(str) {
     const res = str
@@ -110,7 +110,7 @@ function stringMangler(str) {
     cl(res.join('').slice(0,-1))
 }
 
-stringMangler(prompty)
+//stringMangler(prompty)
 
 // #*********************************************************
 // # 3)
@@ -118,3 +118,29 @@ stringMangler(prompty)
 // # Hex values are up to 6 character combinations from the values A-Z and numbers 0-9,
 // # and prefixed by "#"
 // # EX. #FFFF54, #1235FH, #000458, etc...
+
+(function randomHexSelector() {
+
+    function randomInt(num) {
+        return Math.floor(Math.random() * num)
+    }
+
+    function randomAlpha() {
+        const alphaRange = ['A', 'B', 'C', 'D', 'E', 'F']
+        return alphaRange[randomInt(6)]
+    }
+
+    function randomHex() {
+        const intOrAlpha = [randomInt(6), randomAlpha()]
+        return intOrAlpha[randomInt(2)]
+    }
+
+    cl('our result:', '#'.concat(randomHex())
+                        .concat(randomHex())
+                        .concat(randomHex())
+                        .concat(randomHex())
+                        .concat(randomHex())
+                        .concat(randomHex())
+                        )
+
+})()
